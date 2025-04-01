@@ -1,4 +1,4 @@
-#!/bin/bash
+h#!/bin/bash
 echo "Display the message"
 read message
-print message
+echo $message
