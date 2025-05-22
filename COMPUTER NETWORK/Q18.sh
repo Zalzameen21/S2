@@ -23,31 +23,3 @@ exec<$term
 mv temp $2
 
 
-Algorithm:
-Step 1: If args ≠ 2, show syntax and exit.
-Step 2: Save current terminal name to term.
-Step 3: Redirect input from the given file.
-Step 4: For each line: check if it has the exact word.
-Step 5: If not matched exactly, add line to temp.
-Step 6: Restore input back to terminal.
-Step 7: Replace original file with temp.
-Step 8: End.
-
-
-Input:
---------------------------file3.txt----------------------
-This line contains the word linux
-Line without the word
-
-----------------------------------------------------------------
-sh linux.sh file3.txt
-
-
-Output:
-
-vi file3.txt
-
---------------------------file3.txt----------------------
-Line without the word
-
-----------------------------------------------------------------
