@@ -23,30 +23,3 @@ fi
 cp $1 $2
 echo "file copied"
 exit 0
-
-
-
-
-Algorithm:
-Step 1: If args ≠ 2, show syntax and exit.
-Step 2: Check if source file exists and is a regular file; if not, exit.
-Step 3: If target file exists, ask to overwrite (y/n).
-Step 4: If answer is ‘n’, exit.
-Step 5: Copy source file to target file.
-Step 6: Print “file copied” message.
-Step 7: Exit.
-
-Input 1:
-$ sh copyerror.sh file.txt file4.txt
-
-Output 1:
-file.txt is not existing or not an ordinary file
-
-Input 2:
-$ sh copyerror.sh file.txt newfile2.txt
-
-Output 2:
-target file exists,overwrite it (y/n)
-y
-file copied
-
