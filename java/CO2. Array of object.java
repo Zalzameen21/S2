@@ -2,7 +2,6 @@ Q)Program to create a class for Employee having attributes eNo, eName eSalary. R
 employ information and Search for an employee given eNo, using the concept of Array of 
 Objects
 
-
 code:
 
 import java.util.Scanner;
