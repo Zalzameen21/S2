@@ -1,6 +1,8 @@
 Question
 
-Design a MongoDB employee database, using the data given below, in which each employee has a schema with eid (employee id), name (employee name), age (age of an employee), dname (department name by which the employee is working for), projects (projects that are allocated for employees). The projects field is specified in the basis of pname (project name), members (team members) and status (status of the project).
+Design a MongoDB employee database, using the data given below, in which each employee has a schema with
+eid (employee id), name (employee name), age (age of an employee), dname (department name by which the employee is working for), projects (projects that are allocated for employees). 
+The projects field is specified in the basis of pname (project name), members (team members) and status (status of the project).
 
 [Hint: The field projects are sub-documents. projects and members must be inserted as array type]
 
