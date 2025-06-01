@@ -1,4 +1,4 @@
-// === MongoDB Practical – Set 2: Course Database ===
+MongoDB 
 
 // Insert documents into 'course' collection
 db.course.insertMany([
@@ -87,25 +87,21 @@ db.course.find(
   { sem: "fall", dname: "physics" },
   { cno: 1, sem: 1, dname: 1, year: 1, _id: 0 }
 );
-// Output:
-// { "cno": "PHY-102", "sem": "fall", "dname": "physics", "year": 2010 }
+
 
 // Q4.4: Courses where salary is between 60000 and 90000
 db.course.find(
   { "teaches.salary": { $gte: 60000, $lte: 90000 } },
   { cno: 1, "teaches.fname": 1, "teaches.salary": 1, _id: 0 }
 );
-// Output:
-// { "cno": "HIS-351", "teaches": { "fname": "El Siad", "salary": 65000 } }
-// { "cno": "FIN-201", "teaches": { "fname": "Wu", "salary": 90000 } }
-// { "cno": "BIO-121", "teaches": { "fname": "Brandt", "salary": 75000 } }
+
 
 // Q4.5: Faculty with highest salary from physics, finance, biology
 db.course.find(
   { dname: { $in: ["physics", "finance", "biology"] } },
   { "teaches.fname": 1, "teaches.salary": 1, _id: 0 }
 ).sort({ "teaches.salary": -1 }).limit(1);
-// Output:
+
 // { "teaches": { "fname": "Wu", "salary": 90000 } }
 
 // Q4.6: Year-wise course count in ascending order
@@ -113,9 +109,7 @@ db.course.aggregate([
   { $group: { _id: "$year", courseCount: { $sum: 1 } } },
   { $sort: { _id: 1 } }
 ]);
-// Output:
-// { "_id": 2009, "courseCount": 3 }
-// { "_id": 2010, "courseCount": 2 }
+
 
 // Q4.7: Semester with most number of courses
 db.course.aggregate([
@@ -123,5 +117,3 @@ db.course.aggregate([
   { $sort: { total: -1 } },
   { $limit: 1 }
 ]);
-// Output:
-// { "_id": "fall", "total": 2 }
