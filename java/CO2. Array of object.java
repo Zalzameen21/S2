@@ -57,23 +57,3 @@ public class EmployeeSearch {
         sc.close();
     }
 }
-
-
-output:
-
-How many employees? 2
-Enter No, Name, Salary: 101 Alice 30000
-Enter No, Name, Salary: 102 Bob 35000
-Enter employee number to search: 101
-No: 101, Name: Alice, Salary: 30000.0
-
-
-Algorithm: Employee Record Search
-Step 1: Define the Employee class with attributes eNo, eName, and eSalary.
-Step 2: Input the number of employees (n).
-Step 3: Create an array to store Employee objects.
-Step 4: For each employee, input their number (eNo), name (eName), and salary (eSalary).
-Step 5: Input the employee number to search for.
-Step 6: Loop through the array of employees and check if the entered number matches any employee’s eNo.
-        If a match is found, display their details.
-        If no match is found, display "Employee not found."
