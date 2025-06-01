@@ -1,7 +1,6 @@
 Q)Perform string manipulations
 
 code:
-
 import java.util.Scanner;
 
 public class StringManipulation {
