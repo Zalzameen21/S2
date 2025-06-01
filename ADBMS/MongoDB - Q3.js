@@ -1,5 +1,6 @@
-// MongoDB Lab Practical Examination Solutions
-// ===== PART A =====
+MongoDB
+
+
 // Q1. Create and populate the categories collection
 db.categories.insertMany([
   {
