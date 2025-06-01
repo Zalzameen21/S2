@@ -24,26 +24,3 @@ public class SortStrings {
         }
     }
 }
-
-output:
-
-Enter the number of strings: 3
-Enter the strings:
-Apple
-Banana
-Orange
-Sorted Strings:
-Apple
-Banana
-Orange
-
-=== Code Execution Successful ===
-
-
-
-Algorithm: Sort an Array of Strings
-Step 1: Read integer n – total number of strings.
-Step 2: Declare String[] words = new String[n].
-Step 3: Read n strings into the array words.
-Step 4: Use Arrays.sort(words) to sort the array alphabetically.
-Step 5: Print each string from the sorted array.
