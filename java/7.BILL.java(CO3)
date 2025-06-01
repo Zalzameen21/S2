@@ -10,8 +10,6 @@ Product Id  Name       Quantity   Unit Price  Total
                                  Net. Amount 150
 
 
-code:
-
 interface Bill {
     int calculate();
 }
@@ -55,37 +53,3 @@ public class BillTest {
         System.out.println("Net Amount: " + netAmount);
     }
 }
-
-output:
-
-
-Order No    : 1234
-Date        : 08-05-2025
-
-Product Id  Name       Quantity   Unit Price  Total     
-------------------------------------------------------------
-101         A          2          25          50        
-102         B          1          100         100       
-------------------------------------------------------------
-                                 Net. Amount 150
-
-
-
-
-
-
-Algorithm:
-Step 1: Define the Bill interface with a method calculate().
-Step 2: Create the Product class:
-    Implement the Bill interface.
-    Define variables: productId, name, quantity, unitPrice.
-    Implement the calculate() method to compute the total (quantity * unitPrice).
-    Implement the display() method to print product details in a formatted manner.
-Step 3: In the BillTest class:
-    Display the order information (Order No, Date).
-    Display product details with headers ("Product Id", "Name", "Quantity", "Unit Price", "Total").
-Step 4: Create Product objects:
-    For each product, input product information (id, name, quantity, unit price), and display using the display() method.
-Step 5: Calculate the netAmount by adding up the totals of all products.
-Step 6: Display the netAmount after all products are listed.
-Step 7: End the program.
