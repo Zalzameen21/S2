@@ -25,25 +25,3 @@ public class StringManipulation {
 
     }
 }
-
-output:
-
-Enter a string: Hello World
-Length: 11
-Uppercase: HELLO WORLD
-Lowercase: hello world
-Reversed: dlroW olleH
-It is not a palindrome.
-
-=== Code Execution Successful ===
-
-
-Algorithm: String Manipulation and Palindrome Check
-Step 1: Read a string.
-Step 2: Get the length of the string using String.length().
-Step 3: Convert the string to uppercase using String.toUpperCase().
-Step 4: Convert the string to lowercase using String.toLowerCase().
-Step 5: Reverse the string using StringBuilder.reverse() and convert it to a string using toString().
-Step 6: Compare original and reversed strings using String.equalsIgnoreCase():
-    If they match, it's a palindrome.
-    Otherwise, it's not a palindrome.
